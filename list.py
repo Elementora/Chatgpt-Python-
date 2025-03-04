@@ -30,3 +30,28 @@ for meyve in meyveler:
 meyveler = ["Apple", "Banana", "Orange", "Strawberry"]
 for index, meyve in enumerate(meyveler):
     print(f"{index}.meyve:{meyve}")
+
+
+
+# While Döngüsü ile Liste Gezinme
+
+
+sayilar = [10, 20, 30, 40, 50]
+i = 0
+
+while i < len(sayilar):
+    print(sayilar[i])
+    i += 1
+
+
+# Uygulama
+
+sayilar = []
+
+for i in range(5):
+    sayi = int(input(f"{i+1}. sayıyı giriniz :"))
+    sayilar.append(sayi)   # Listeye ekleme
+
+    Ortalama = sum(sayilar) / len(sayilar)
+    print(f"Girilen sayıların ortalaması : {Ortalama}")
+
