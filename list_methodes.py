@@ -29,7 +29,7 @@ sayilar.pop(1)  # 1. indeks (20) silinir
 print(sayilar)  # [10, 30]
 
 
-# short()
+# sort()
 
 sayilar = [5, 1, 8, 3]
 sayilar.sort()  # Küçükten büyüğe sıralar
