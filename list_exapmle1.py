@@ -42,3 +42,14 @@ def double_numbers(numbers):
     print("İkiye katlanmış liste:", double_numbers(my_list))
 
 # Çıktı: [4, 8, 12, 16, 20]
+
+
+def filter_greater_than_five(numbers):
+    greater_numbers = []
+    for num in numbers:
+        if num > 5:  # Eğer sayı 5'ten büyükse
+            greater_numbers.append(num)  # Listeye ekle
+            return greater_numbers
+
+    my_list = [1, 3, 5, 7, 9, 2, 8, 4, 6]
+    print("5 ten büyük sayılar :", filter_greater_than_five(greater_numbers))
