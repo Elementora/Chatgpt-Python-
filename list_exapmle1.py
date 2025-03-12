@@ -26,3 +26,19 @@ def filter_even_numbers(numbers):
         my_list = [3, 6, 9, 12, 15, 18]
         print("Çift sayılar", filter_even_numbers(my_list))
         # Çıktı: [6, 12, 18]
+
+ #####################################################
+
+# Fonksiyon ile Liste Üzerinde İşlem Yapma
+# istenin Elemanlarını İkiye Katlayan Fonksiyon
+
+
+def double_numbers(numbers):
+    for i in range(len(numbers)):
+        numbers[i] = numbers[i]*2
+        return numbers
+
+    my_list = [2, 4, 6, 8, 10]
+    print("İkiye katlanmış liste:", double_numbers(my_list))
+
+# Çıktı: [4, 8, 12, 16, 20]
