@@ -1,6 +1,6 @@
 # 🐍 My Python Learning Journey
 
-Hello! I'm **[Your Name Here]**, and this repository documents my **Python learning process**. Here, you will find topics I've studied, exercises I've solved, and projects I've worked on.
+Hello! I'm **[Ersan]**, and this repository documents my **Python learning process**. Here, you will find topics I've studied, exercises I've solved, and projects I've worked on.
 
 ## 📌 What's in This Repo?
 This repository contains my **step-by-step Python learning journey**, including:
