@@ -63,3 +63,14 @@ def iki_katı(lst): return [num * 2 if num % 2 != 0 else num for num in lst]
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(iki_katı(numbers))
 # Çıktı: [2, 2, 6, 4, 10, 6, 14, 8, 18, 10]
+
+
+####################################################
+# Tüm Sayıları 2 Katına Çıkaran Fonksiyon
+
+def iki_katı(lst): return [num * 2 for num in lst]
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(iki_katı(numbers))
+# Çıktı: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
