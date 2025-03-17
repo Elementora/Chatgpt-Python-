@@ -52,3 +52,14 @@ def replace_negatives(lst): return list(
 
 my_list = [-3, 5, -1, 7, 0, -8, 4]
 print(replace_negatives(my_list))  # Çıktı: [0, 5, 0, 7, 0, 0, 4]
+
+##########################################################
+# Tek sayıları iki katına çıkaran bir fonksiyon
+
+
+def iki_katı(lst): return [num * 2 if num % 2 != 0 else num for num in lst]
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(iki_katı(numbers))
+# Çıktı: [2, 2, 6, 4, 10, 6, 14, 8, 18, 10]
