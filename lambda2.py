@@ -31,3 +31,24 @@ def replace_negatives(lst):
 
     my_list = [-3, 5, -1, 7, 0, -8, 4]
     print(replace_negatives(my_list))  # Çıktı: [0, 5, 0, 7, 0, 0, 4]
+
+# 2. Yöntem: List Comprehension ile
+
+
+def replace_negatives(lst):
+    return [0 if num < 0 else num for num in list]
+
+
+# Test edelim
+my_list = [-3, 5, -1, 7, 0, -8, 4]
+print(replace_negatives(my_list))  # Çıktı: [0, 5, 0, 7, 0, 0, 4]
+
+
+# 3. Yöntem: Lambda + map ile
+
+def replace_negatives(lst): return list(
+    map(lambda num: 0 if num < 0 else num, lst))
+
+
+my_list = [-3, 5, -1, 7, 0, -8, 4]
+print(replace_negatives(my_list))  # Çıktı: [0, 5, 0, 7, 0, 0, 4]
