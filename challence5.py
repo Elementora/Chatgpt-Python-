@@ -94,7 +94,27 @@ sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 sonuc = cift_sayilar(sayilar)
 print(sonuc)  # Çıktı: [2, 4, 6, 8, 10]
 
+
 # Lambda ve filter() ile Daha Kısa Yazımı
 sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 sonuc = list(filter(lambda x: x % 2 == 0, sayilar))
 print(sonuc)  # Çıktı: [2, 4, 6, 8, 10]
+
+
+############################################################################
+# Tek Sayıları Filtreleme
+
+
+def tek_sayilar(lst):
+    return [x for x in lst if x % 2 != 0]
+
+
+sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sonuc = tek_sayilar(sayilar)
+print(sonuc)
+
+
+# Lambda ve filter() ile Daha Kısa Yazımı
+sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+sonuc = list(filter(lambda x: x % 2 != 0, sayilar))
+print(sonuc)
