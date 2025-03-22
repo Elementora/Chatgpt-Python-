@@ -118,3 +118,21 @@ print(sonuc)
 sayilar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 sonuc = list(filter(lambda x: x % 2 != 0, sayilar))
 print(sonuc)
+
+
+############################################################################
+# 5'in Katlarını Filtreleme
+
+def besin_katlari(lst):
+    return [x for x in lst if x % 5 == 0]  # 5’e tam bölünenleri seçiyoruz.
+
+
+sayilar = [1, 5, 10, 14, 15, 20, 22, 25, 30, 33]
+sonuc = besin_katlari(sayilar)
+print(sonuc)  # Çıktı: [5, 10, 15, 20, 25, 30]
+
+
+# Lambda ve filter() ile Daha Kısa Yazımı
+sayilar = [1, 5, 10, 14, 15, 20, 22, 25, 30, 33]
+sonuc = list(filter(lambda x: x % 5 == 0,sayilar))
+print(sonuc)
