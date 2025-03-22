@@ -50,3 +50,22 @@ print(sonuc)  # Çıktı: [1, 4, 9, 16, 25]
 sayilar = [1, 2, 3, 4, 5]
 sonuc = list(map(lambda x: x ** 2, sayilar))
 print(sonuc)
+
+
+############################################################################
+# Pozitif Sayıları Filtreleme
+
+def pozitif_Sayilar(lst):
+    return [x for x in lst if x > 0]  # Pozitif olanları seçiyoruz.
+
+
+sayilar = [-10, -3, 0, 3, 7, 5, -2, 8]
+sonuc = pozitif_Sayilar(sayilar)
+
+print(sonuc)
+
+# Lambda ve filter() ile Daha Kısa Yazımı
+
+sayilar = [-10, -3, 0, 3, 7, 5, -2, 8]
+sonuc = list(filter(lambda x: x > 0, sayilar))
+print(sonuc)
