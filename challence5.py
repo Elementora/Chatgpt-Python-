@@ -69,3 +69,15 @@ print(sonuc)
 sayilar = [-10, -3, 0, 3, 7, 5, -2, 8]
 sonuc = list(filter(lambda x: x > 0, sayilar))
 print(sonuc)
+
+
+############################################################################
+# String Uzunluklarını Döndüren Fonksiyon
+
+def kelime_uzunluklari(lst):
+    return [len(x) for x in lst]  # Her kelimenin uzunluğunu alır.
+
+
+kelimeler = ["Python", "Lamda", " Fonksiyon", "Kod"]
+sonuc = kelime_uzunluklari(kelimeler)
+print(sonuc)  # Çıktı: [6, 6, 9, 3]
