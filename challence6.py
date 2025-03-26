@@ -69,3 +69,17 @@ print(sonuc)  # Çıktı: 10
 sayilar = [1, 5, 8, 10, 3, 6]
 sonuc = max(sayilar, key=lambda x: x)  # x, her bir liste elemanıdır.
 print(sonuc)
+
+
+# lamda ile Her sayının karesine göre en büyüğü
+sayilar = [1, 5, 8, 10, 3, 6]
+
+# Her sayının karesine göre en büyüğü bulur.
+sonuc = max(sayilar, key=lambda x: x ** 2)
+print(sonuc)
+
+
+# lamda ile en kucuk sayı
+sayilar = [1, 5, 8, 10, 3, 6]
+sonuc = min(sayilar, key=lambda x: x)
+print(sonuc)
