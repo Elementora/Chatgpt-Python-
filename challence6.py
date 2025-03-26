@@ -83,3 +83,9 @@ print(sonuc)
 sayilar = [1, 5, 8, 10, 3, 6]
 sonuc = min(sayilar, key=lambda x: x)
 print(sonuc)
+
+
+sayilar = [1, 5, 8, 10, 3, 6]
+# Her sayının karesine göre en küçük olanı bulur.
+sonuc = min(sayilar, key=lambda x: x**2)
+print(sonuc)
