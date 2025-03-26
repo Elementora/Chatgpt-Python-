@@ -28,9 +28,44 @@ kelimeler = ["Elma", "Kiraz", "Armut", "Babagannus", "Portakal", "Karpuz"]
 sonuc = uzun_kelime_filtrele(kelimeler)
 print(sonuc)
 
-###############################################################
+
 # Lambda ve filter() ile Daha Kısa Yazımı
 
 kelimeler = ["Elma", "Kiraz", "Armut", "Babagannus", "Portakal", "Karpuz"]
 sonuc = list(filter(lambda kelime: len(kelime) > 5, kelimeler))
+print(sonuc)
+
+###############################################################
+# Pozitif Sayıları Seçme
+
+
+def pozitif_sayilari_sec(lst):
+    return [sayi for sayi in lst if sayi > 0]
+
+
+sayilar = [-5, -3, 0, 2, 4, 7, -1, 9]
+sonuc = pozitif_sayilari_sec(sayilar)
+print(sonuc)  # Çıktı: [2, 4, 7, 9]
+
+# Lambda ve filter() ile Daha Kısa Yazımı
+sayilar = [-5, -3, 0, 2, 4, 7, -1, 9]
+sonuc = list(filter(lambda sayi: sayi > 0, sayilar))
+print(sonuc)
+
+
+###############################################################
+# En Büyük Sayıyı Bulma
+
+def en_buyuk_sayi(lst):
+    return max(lst)
+
+
+sayilar = [1, 5, 8, 10, 3, 6]
+sonuc = en_buyuk_sayi(sayilar)
+print(sonuc)  # Çıktı: 10
+
+# Lambda ile Daha Kısa Yazımı
+
+sayilar = [1, 5, 8, 10, 3, 6]
+sonuc = max(sayilar, key=lambda x: x)  # x, her bir liste elemanıdır.
 print(sonuc)
