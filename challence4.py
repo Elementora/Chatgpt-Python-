@@ -14,7 +14,7 @@ print(fizzbuzz(numbers))
 
 
 # Lambda Fonksiyonu ile
-fizzbuzz = lambda lst :  ["Fizzbuzz" if num % 3 == 0 and num % 5 == 0 else 
-                          "Fizz" if num % 3 == 0 else 
-                          "Buzz" if num % 5 == 0 else 
-                          num for  num in lst]
+def fizzbuzz(lst): return ["Fizzbuzz" if num % 3 == 0 and num % 5 == 0 else
+                           "Fizz" if num % 3 == 0 else
+                           "Buzz" if num % 5 == 0 else
+                           num for num in lst]
