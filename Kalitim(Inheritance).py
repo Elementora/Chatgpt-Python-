@@ -21,3 +21,15 @@ class Araba(Arac):
         return f"{self.yil} model {self.marka} {self.model} - Renk : {self.renk}"
 
 # Araba nesnesi oluşturalım
+
+
+araba1 = Araba("Toyota", "Corolla", 2025, "Grey")
+
+
+# Üst sınıf metodunu kullanabiliyor!
+
+print(araba1.arac_bilgisi())  # Çıktı: 2025 model Toyota Corolla
+
+# Alt sınıfın yeni metodunu kullanabiliyor!
+
+print(araba1.araba_bilgisi())  # Çıktı: 2025 model Toyota Corolla - Renk: Grey
