@@ -29,3 +29,31 @@ kisi1 = Kisi("Ahmet", 28)
 print(kisi1.get_ad())  # Ahmet
 kisi1.set_yas(30)
 print(kisi1.get_yas())   # 30
+
+
+##############################################################################
+# 2. Inheritance (Kalıtım)
+
+class Hayvan:
+    def __init__(self, ad):
+        self.ad = ad
+
+    def ses_cikar(self):
+        return "Bir ses Çıkart"
+
+
+class Kedi(Hayvan):
+    def ses_cikar(self):
+        return "Miyav"
+
+
+class Kopek(Hayvan):
+    def ses_cikar(self):
+        return "Hav Hav"
+
+
+kedi1 = Kedi("Leo")
+kopek1 = Kopek("Comar")
+
+print(kedi1.ses_cikar())  # Miyav
+print(kopek1.ses_cikar())  # Hav hav
