@@ -9,13 +9,13 @@ class Kisi:
         self.__yas = yas
 
     def get_ad(self):
-        self.__ad
+        return self.__ad
 
     def set_ad(self, yeni_ad):
         self.__ad = yeni_ad
 
-    def get_yas(self, yeni_yas):
-        self.__yas
+    def get_yas(self):
+        return self.__yas
 
     def set_yas(self, yeni_yas):
         if yeni_yas > 0:
