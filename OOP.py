@@ -57,3 +57,34 @@ kopek1 = Kopek("Comar")
 
 print(kedi1.ses_cikar())  # Miyav
 print(kopek1.ses_cikar())  # Hav hav
+
+
+#############################################################
+
+
+class Kisi:
+    def __init__(self, ad, yas):
+        self.__ad = ad
+        self.__yas = yas
+
+    def get_ad(self):
+        return self.__ad
+
+    def set_ad(self, yeni_ad):
+        self.__ad = yeni_ad
+
+    def get_yas(self):
+        return self.__yas
+
+    def set_yas(self, yeni_yas):
+        if yeni_yas > 0:
+            self.__yas = yeni_yas
+        else:
+            print("Yaş nedatif olamaz !")
+
+
+kisi1 = Kisi("Osman", 31)
+
+print(kisi1.get_ad())
+kisi1.set_yas(42)
+print(kisi1.get_yas())
